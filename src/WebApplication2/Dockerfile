@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:latest
 
-COPY project.json /app/
+#COPY project.json /app/
 WORKDIR /app
 RUN ["dotnet", "restore"]
 COPY . /app
