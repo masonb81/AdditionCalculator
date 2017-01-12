@@ -16,7 +16,7 @@ namespace WebApplication2
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
-                .UseUrls("http://0.0.0.0:80")
+                .UseUrls("http://0.0.0.0:5000")
                 .Build();
 
             //var host = new WebHostBuilder()

@@ -4,3 +4,5 @@ ARG source=.
 WORKDIR /app
 EXPOSE 80
 COPY $source .
+
+RUN dotnet restore
