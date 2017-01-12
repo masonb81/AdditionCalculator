@@ -20,4 +20,3 @@ EXPOSE $CONTAINER_PORT
  
 # ENTRYPOINT ["dotnet", "WebApplication2.dll"]
 # ENTRYPOINT ["dotnet", "run"]
-RUN ["dotnet", "WebApplication2.dll"]
