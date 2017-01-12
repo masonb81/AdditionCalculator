@@ -13,7 +13,7 @@ ENV SERVER.URLS $SERVER_URLS
 EXPOSE $CONTAINER_PORT
 
 #RUN ["dotnet", "restore"]
-RUN ["dotnet", "build"]
+#RUN ["dotnet", "build"]
  
 #EXPOSE 5000/tcp
 #ENV ASPNETCORE_URLS http://*:5000
