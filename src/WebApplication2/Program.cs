@@ -19,17 +19,6 @@ namespace WebApplication2
                 .UseUrls("http://0.0.0.0:5000")
                 .Build();
 
-            //var host = new WebHostBuilder()
-            //            .UseServer("Microsoft.AspNetCore.Server.Kestrel")
-            //            .UseApplicationBasePath(Directory.GetCurrentDirectory())
-            //            .UseDefaultConfiguration(args)
-            //            .UseIISPlatformHandlerUrl()
-            //            .UseStartup<Startup>()
-            //            .UseUrls("http://localhost:5050")
-            //            .Build();
-
-            host.Run();
-
             host.Run();
         }
     }
