@@ -2,7 +2,7 @@ FROM microsoft/dotnet:latest
 
 #COPY project.json /app/
 WORKDIR /app
-RUN ["dotnet", "restore"]
+#RUN ["dotnet", "restore"]
 COPY . /app
 
 # Default to port 5000
@@ -18,4 +18,4 @@ EXPOSE $CONTAINER_PORT
 #EXPOSE 5000/tcp
 #ENV ASPNETCORE_URLS http://*:5000
  
-ENTRYPOINT ["dotnet", "run"]
+ENTRYPOINT ["dotnet", "WebApplication2.dll"]
