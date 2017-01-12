@@ -19,4 +19,5 @@ EXPOSE $CONTAINER_PORT
 #ENV ASPNETCORE_URLS http://*:5000
  
 # ENTRYPOINT ["dotnet", "WebApplication2.dll"]
-ENTRYPOINT ["dotnet", "run"]
+# ENTRYPOINT ["dotnet", "run"]
+RUN ["dotnet", "WebApplication2.dll"]
