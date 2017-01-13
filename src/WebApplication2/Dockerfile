@@ -1,15 +1,20 @@
-FROM microsoft/dotnet
+FROM microsoft/aspnetcore
+WORKDIR /app
+COPY . .
+ENTRYPOINT ["dotnet", "WebApplication2.dll"]
 
-WORKDIR /WebApplication2
+#FROM microsoft/dotnet
+
+#WORKDIR /WebApplication2
 
 # copy project.json and restore as distinct layers
-COPY project.json .
-RUN dotnet restore
+#COPY project.json .
+#RUN dotnet restore
 
 # copy and build everything else
-COPY . .
-RUN dotnet publish -c Release -o out
-ENTRYPOINT ["dotnet", "out/WebApplication2.dll"]
+#COPY . .
+#RUN dotnet publish -c Release -o out
+#ENTRYPOINT ["dotnet", "out/WebApplication2.dll"]
 
 #FROM microsoft/dotnet:latest
 
