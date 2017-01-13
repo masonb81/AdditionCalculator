@@ -1,7 +1,7 @@
 FROM microsoft/aspnetcore
 WORKDIR /app
 COPY . .
-ENTRYPOINT ["dotnet", "WebApplication2.dll"]
+ENTRYPOINT ["dotnet", " bin/Debug/netcoreapp1.1/WebApplication2.dll"]
 
 #FROM microsoft/dotnet
 
