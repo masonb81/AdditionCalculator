@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore
+FROM microsoft/dotnet:1.1-sdk-projectjson
 WORKDIR /app
 COPY . .
 EXPOSE 5000
@@ -6,7 +6,7 @@ EXPOSE 5000
 RUN ["dotnet", "restore"]
 RUN ["dotnet", "build"]
 
-ENTRYPOINT ["dotnet", "bin/Debug/netcoreapp1.1/WebApplication2.dll"]
+ENTRYPOINT ["dotnet", "run"]
 
 #FROM microsoft/dotnet
 
