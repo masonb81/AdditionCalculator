@@ -3,7 +3,6 @@ WORKDIR /app
 COPY . .
 EXPOSE 5000
 
-COPY project.json .
 RUN ["dotnet", "restore"]
 RUN ["dotnet", "build"]
 
